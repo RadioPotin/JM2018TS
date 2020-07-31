@@ -2,7 +2,7 @@
 This repo has been modified in the context of my internship in static analysis at the CEA-LIST, France.
 
 `GNUmakefile` was made to support both static analyzers [Frama-C](https://git.frama-c.com/pub/frama-c) and [Infer](https://github.com/facebook/infer).
-It defaults to launching the analysis of the test suite with `Frama-c`:
+It defaults to launching `Frama-c` on the test suite:
   - `make -j` launch analysis of all `.c` files in the test suite.
   - `make gui -j` launches `Frama-C`'s GUI.
   - `make evaluate -j` same as `make -j` but also launches a script that generates `eval_summary.txt` which sums up results regarding the handling of a variety of CWE by `Frama-C`, excluding some non-supported features like the analysis of recursive calls.
